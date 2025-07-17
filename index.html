@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rendi Fauzi's Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="nav-title">Rendi Fauzi</div>
+
+        <!-- TAMBAHKAN HAMBURGER INI -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      <ul>
+        <li><a href="#home" data-lang="nav-home">Home</a></li>
+        <li><a href="#about" data-lang="nav-about">About</a></li>
+        <li><a href="#skill" data-lang="nav-skills">Skills</a></li>
+        <li><a href="#project" data-lang="nav-projects">Projects</a></li>
+        <li><a href="#contact" data-lang="nav-contact">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <select id="language-toggle">
+          <option value="en">English</option>
+          <option value="id">Bahasa Indonesia</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="content">
+      <div class="info">
+        <div class="title" data-lang="home-title">Welcome to My Portfolio</div>
+        <div class="description" data-lang="home-description">
+          Join me on a journey through my work, filled with creativity and dedication! Whether you're interested in my projects, skills, or just want to connect, I've got something for all tastes. Explore and let's collaborate!
+        </div>
+        
+        <button class="btn" data-lang="home-button">Explore</button>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/1752580061821.jpg" alt="Project 1" />
+            <div class="overlay"></div>
+          </div>
+          <div class="swiper-slide">
+            <img class="img-position" src="img/1752580061873.jpg" alt="Project 2" />
+            <div class="overlay"></div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/1752580061847.jpg" alt="Project 3" />
+            <div class="overlay"></div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/1752580061860.jpg" alt="Project 4" />
+            <div class="overlay"></div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/1752580061836.jpg" alt="Project 5" />
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </section>
+
+  <section id="about" class="section">
+    <div class="content">
+      <div class="about-container">
+        <div class="about-text">
+          <div class="title" data-lang="about-title">About Me</div>
+          <div class="description" data-lang="about-description">
+            I am a passionate developer with a love for creating innovative web solutions. With experience in HTML, CSS, JavaScript, and more, I strive to build projects that are both functional and visually appealing.
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">50+</div>
+              <div class="stat-label" data-lang="about-projects">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">3+</div>
+              <div class="stat-label" data-lang="about-experience">Years Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label" data-lang="about-satisfaction">Client Satisfaction</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="profile-card">
+            <div class="profile-image">
+              <img src="img/1750301805273.jpg" alt="Profile">
+            </div>
+            <div class="profile-info">
+              <h3>Rendi Fauzi</h3>
+              <p data-lang="about-role">Full Stack Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skill" class="section">
+    <div class="content">
+      <div class="title" data-lang="skills-title">Skills & Expertise</div>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-code"></i> <span data-lang="skills-frontend">Frontend</span></h3>
+          <div class="skill-grid">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="skill-info">
+                <h4>HTML5</h4>
+                <p data-lang="skill-html">Semantic markup for modern web applications.</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <div class="skill-info">
+                <h4>CSS3</h4>
+                <p data-lang="skill-css">Advanced styling with animations and responsive design.</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div class="skill-info">
+                <h4>JavaScript</h4>
+                <p data-lang="skill-js">Dynamic and interactive web functionality.</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <div class="skill-info">
+                <h4>React</h4>
+                <p data-lang="skill-react">Component-based UI for scalable applications.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-server"></i> <span data-lang="skills-backend">Backend</span></h3>
+          <div class="skill-grid">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="skill-info">
+                <h4>Python</h4>
+                <p data-lang="skill-python">Server-side logic and scripting.</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fa-solid fa-database"></i Pam>
+              </div>
+              <div class="skill-info">
+                <h4>Database</h4>
+                <p data-lang="skill-database">Data management with SQL/NoSQL databases.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-palette"></i> <span data-lang="skills-design">Design</span></h3>
+          <div class="skill-grid">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <izsh class="fa-solid fa-paintbrush"></i>
+              </div>
+              <div class="skill-info">
+                <h4>UI/UX Design</h4>
+                <p data-lang="skill-uiux">User-centric design for intuitive interfaces.</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <div class="skill-info">
+                <h4>Problem Solving</h4>
+                <p data-lang="skill-problem">Creative solutions for complex challenges.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="project" class="section">
+  <div class="content">
+    <div class="title" data-lang="projects-title">Featured Projects</div>
+    <div class="projects-container">
+      <div class="project-card">
+        <div class="project-image">
+          <img src="img/personalporto.jpg" alt="Personal Website">
+          <div class="project-overlay">
+            <div class="project-buttons">
+              <a href="#" class="btn-demo"><i class="fa-solid fa-eye"></i> <span data-lang="project-demo">Live Demo</span></a>
+              <a href="#" class="btn-code"><i class="fa-brands fa-github"></i> <span data-lang="project-code">Code</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 data-lang="project-portfolio-title">Personal Portfolio</h3>
+          <p data-lang="project-portfolio-desc">A dynamic portfolio showcasing my work with modern design and smooth animations.</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">
+          <img src="img/gameproject.webp" alt="Game App">
+          <div class="project-overlay">
+            <div class="project-buttons">
+              <a href="#" class="btn-demo"><i class="fa-solid fa-eye"></i> <span data-lang="project-demo">Live Demo</span></a>
+              <a href="#" class="btn-code"><i class="fa-brands fa-github"></i> <span data-lang="project-code">Code</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 data-lang="project-game-title">Game Application</h3>
+          <p data-lang="project-game-desc">An interactive game built with Pygame and modern web technologies.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Pygame</span>
+            <span>Pyodide</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">
+          <img src="img/ecomerce.png" alt="E-Commerce">
+          <div class="project-overlay">
+            <div class="project-buttons">
+              <a href="#" class="btn-demo"><i class="fa-solid fa-eye"></i> <span data-lang="project-demo">Live Demo</span></a>
+              <a href="#" class="btn-code"><i class="fa-brands fa-github"></i> <span data-lang="project-code">Code</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 data-lang="project-ecommerce-title">E-Commerce Platform</h3>
+          <p data-lang="project-ecommerce-desc">A responsive online store prototype with modern UI and smooth user experience.</p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="more-projects.html" class="btn btn-more" data-lang="more-projects">More Projects</a>
+  </div>
+</section>
+
+  <section id="contact" class="section">
+  <div class="content">
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="title" data-lang="contact-title">Get In Touch</div>
+        <div class="description" data-lang="contact-description">
+          Ready to collaborate? Let's discuss your next project and bring your ideas to life!
+        </div>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h4 data-lang="contact-email">Email</h4>
+              <p>rendfauzi212@email.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="contact-text">
+              <h4>LinkedIn</h4>
+              <p>linkedin.com/in/rendi-fauzi-239a36372</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="contact-text">
+              <h4>GitHub</h4>
+              <p>https://github.com/REFAZ212</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" data-lang-placeholder="contact-name-placeholder" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" data-lang-placeholder="contact-email-placeholder" required>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Subject" data-lang-placeholder="contact-subject-placeholder" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" data-lang-placeholder="contact-message-placeholder" rows="5" required></textarea>
+        </div>
+        <button class="btn-submit">
+          <i class="fa-solid fa-paper-plane"></i> <span data-lang="contact-submit">Send Message</span>
+        </button>
+        <a href="https://wa.me/qr/NRF534265BOBP1 " target="_blank" class="btn btn-whatsapp" data-lang="contact-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> <span>Contact via WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Rendi Fauzi</h3>
+        <p data-lang="footer-about">Full Stack Developer passionate about creating innovative web solutions.</p>
+        <div class="social-links">
+          <a href="https://github.com/rendfauzi"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/rendfauzi"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://x.com/rendfauzi"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://instagram.com/rendfauzi"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3 data-lang="footer-links">Quick Links</h3>
+        <ul>
+          <li><a href="#home" data-lang="nav-home">Home</a></li>
+          <li><a href="#about" data-lang="nav-about">About</a></li>
+          <li><a href="#skill" data-lang="nav-skills">Skills</a></li>
+          <li><a href="#project" data-lang="nav-projects">Projects</a></li>
+          <li><a href="#間で<li><a href="#contact" data-lang="nav-contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 data-lang="footer-services">Services</h3>
+        <ul>
+          <li><a href="#" data-lang="service-web">Web Development</a></li>
+          <li><a href="#" data-lang="service-uiux">UI/UX Design</a></li>
+          <li><a href="#" data-lang="service-mobile">Mobile Apps</a></li>
+          <li><a href="#" data-lang="service-consulting">Consulting</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 data-lang="footer-contact">Contact Info</h3>
+        <div class="contact-info">
+          <p><i class="fa-solid fa-envelope"></i> rendfauzi@example.com</p>
+          <p><i class="fa-solid fa-phone"></i> +62 123 456 789</p>
+          <p><i class="fa-solid fa-map-marker-alt"></i> Bandung, Indonesia</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-lang="footer-copyright">© 2025 Rendi Fauzi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>
